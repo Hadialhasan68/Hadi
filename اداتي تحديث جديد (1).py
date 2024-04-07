@@ -379,6 +379,13 @@ a37 = '\x1b[38;5;172m'  # ذهبي داكن
 a38 = '\x1b[38;5;188m'  # فضي فاتح
 a39 = '\x1b[38;5;247m'  # فضي داكن
 a40 = '\x1b[38;5;117m'  # أزرق سماوي
+import datetime
+an = datetime.datetime.now()
+an2 = datetime.datetime(2024, 4, 7, 0, 00, 00)#تحكم بالوقت
+if an > an2 or an == an2:
+        exit("انتهئ وقت الاشتراك في الاداه راسل المطور اداه لتشغيلها @E_3FF :  ")
+else:
+        pass
 import random
 import string
 
