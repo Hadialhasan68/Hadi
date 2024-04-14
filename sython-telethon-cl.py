@@ -46,7 +46,7 @@ print('  ')
 
 import requests
 
-filename = 'SDMVIP.json'
+filename = 'sython.json'
 with open(filename, 'r') as f:
     data = json.load(f)
     api_id = data['api_id']
@@ -218,7 +218,7 @@ async def callback(event):
             num_accounts = 0
             stored_users = []
             for file in os.listdir():
-                if file not in ['run.py', 'sythonkalb.py', 'SDMVIP.json', '__pycache__', 'SDMVIP-telethon-cl.py', 'bot.session']:
+                if file not in ['run.py', 'sythonkalb.py', 'sython.json', '__pycache__', 'SDMVIP-telethon-cl.py', 'bot.session']:
                     os.remove(file)
         elif answer.text == 'لا':
             await event.edit('لن يتم مسح بيانات البوت.')
