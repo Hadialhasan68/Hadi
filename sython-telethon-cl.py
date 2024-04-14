@@ -7,7 +7,7 @@
 import threading
 import os
 import json
-from SDMVIPkalb import *
+from sythonkalb import *
 from telethon import TelegramClient, events
 from datetime import datetime
 import time
@@ -218,7 +218,7 @@ async def callback(event):
             num_accounts = 0
             stored_users = []
             for file in os.listdir():
-                if file not in ['run.py', 'SDMVIPkalb.py', 'SDMVIP.json', '__pycache__', 'SDMVIP-telethon-cl.py', 'bot.session']:
+                if file not in ['run.py', 'sythonkalb.py', 'SDMVIP.json', '__pycache__', 'SDMVIP-telethon-cl.py', 'bot.session']:
                     os.remove(file)
         elif answer.text == 'لا':
             await event.edit('لن يتم مسح بيانات البوت.')
